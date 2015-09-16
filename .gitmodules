@@ -28,3 +28,6 @@
 [submodule "webservice-psicquic-client"]
 	path = webservice-psicquic-client
 	url = git@github.com:cytoscape/webservice-psicquic-client.git
+[submodule "cyREST"]
+	path = cyREST
+	url = git@github.com:cytoscape/cyREST.git

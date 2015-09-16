@@ -19,6 +19,7 @@
 	<modules>
 		<module>biopax</module>
 		<module>command-dialog</module>
+		<module>cyREST</module>
 		<module>datasource-biogrid</module>
 		<module>network-analyzer</module>
 		<module>network-merge</module>
