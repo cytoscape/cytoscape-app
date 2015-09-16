@@ -1,0 +1,9 @@
+[submodule "biopax"]
+	path = biopax
+	url = git@github.com:cytoscape/biopax.git
+[submodule "command-dialog"]
+	path = command-dialog
+	url = git@github.com:cytoscape/command-dialog.git
+[submodule "welcome"]
+	path = welcome
+	url = git@github.com:cytoscape/welcome.git
