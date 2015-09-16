@@ -7,3 +7,24 @@
 [submodule "welcome"]
 	path = welcome
 	url = git@github.com:cytoscape/welcome.git
+[submodule "datasource-biogrid"]
+	path = datasource-biogrid
+	url = git@github.com:cytoscape/datasource-biogrid.git
+[submodule "network-analyzer"]
+	path = network-analyzer
+	url = git@github.com:cytoscape/network-analyzer.git
+[submodule "network-merge"]
+	path = network-merge
+	url = git@github.com:cytoscape/network-merge.git
+[submodule "psi-mi"]
+	path = psi-mi
+	url = git@github.com:cytoscape/psi-mi.git
+[submodule "sbml"]
+	path = sbml
+	url = git@github.com:cytoscape/sbml.git
+[submodule "webservice-biomart-client"]
+	path = webservice-biomart-client
+	url = git@github.com:cytoscape/webservice-biomart-client.git
+[submodule "webservice-psicquic-client"]
+	path = webservice-psicquic-client
+	url = git@github.com:cytoscape/webservice-psicquic-client.git

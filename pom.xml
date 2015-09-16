@@ -4,25 +4,28 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>org.cytoscape</groupId>
-		<artifactId>parent</artifactId>
-		<version>3.3.0-SNAPSHOT</version>
-	</parent>
-
-	<artifactId>apps</artifactId>
+	<groupId>org.cytoscape</groupId>
+	<artifactId>app-parent</artifactId>
+	<version>3.3.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Parent Project POM for Core Apps</name>
 
 	<scm>
-		<connection>scm:git:git://github.com/cytoscape/apps.git</connection>
-		<developerConnection>scm:git:git@github.com:cytoscape/apps.git</developerConnection>
-		<url>https://github.com/cytoscape/apps.git</url>
+		<connection>scm:git:git://github.com/cytoscape/cytoscape-app.git</connection>
+		<developerConnection>scm:git:git@github.com:cytoscape/cytoscape-app.git</developerConnection>
+		<url>https://github.com/cytoscape/cytoscpae-app.git</url>
 	</scm>
 
 	<modules>
 		<module>biopax</module>
 		<module>command-dialog</module>
+		<module>datasource-biogrid</module>
+		<module>network-analyzer</module>
+		<module>network-merge</module>
+		<module>psi-mi</module>
+		<module>sbml</module>
+		<module>webservice-biomart-client</module>
+		<module>webservice-psicquic-client</module>
 		<module>welcome</module>
 	</modules>
 </project>
