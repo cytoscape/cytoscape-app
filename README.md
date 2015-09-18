@@ -45,19 +45,79 @@ In this section, you will learn how to refrect your changes in an app to the cor
 
 
 ### Synchronize an App Project
-* Go into the app's directory.  Let's use ___smbl___ as an example.
+First of all, let's go into one of the apps' directory.  We will use ___smbl___ as an example.
 
 ```
 cd sbml
 ```
 
-* Check the status of sbml app directory:
+#### Check the status of sbml app directory:
 
 ```
 ~/p/c/a/sbml git:master ❯❯❯ git status
 HEAD detached at 947e5ca
 nothing to commit, working directory clean
 ```
+
+Now you can see this is __NOT__ a regular branch.  It is called ___detached HEAD___ which is an ophan isolated from all branches.  Remember, since submodule is a pointer to a commit (associated with a hash), this is normal.
+
+
+#### Move to a regular branch
+To go back to a regular branche, in our case ___master___, type the following command:
+
+```
+git checkout master
+```
+
+and check the status again.
+
+```
+/p/c/a/sbml git:master ❯❯❯ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+```
+
+Now you are ready to write your code.  We will use [GitHub Flow](https://guides.github.com/introduction/flow/) model for all core apps, and the first thing you need to do is create a new feature branch.  Give a descriptive name for your new feature branch:
+
+```
+git checkout -b update-readme
+```
+
+#### Commit new changes
+Once you finish your work, just follow the regular workflow:
+
+```git
+~/p/c/a/sbml git:update-readme ❯❯❯ git status                                                                                                                   ✱
+On branch update-readme
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+~/p/c/a/sbml git:update-readme ❯❯❯ git add -A                                                                                                                   ✱
+~/p/c/a/sbml git:update-readme ❯❯❯ git commit -m "README updated for SBML Reader App."                                                                          ✚
+[update-readme 316ed8d] README updated for SBML Reader App.
+ 1 file changed, 6 insertions(+)
+~/p/c/a/sbml git:update-readme ❯❯❯ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+~/p/c/a/sbml git:master ❯❯❯ git merge update-readme
+Updating 9ec0874..316ed8d
+Fast-forward
+ README.md | 6 ++++++
+ 1 file changed, 6 insertions(+)
+~/p/c/a/sbml git:master ❯❯❯ git push
+```
+
+You can repeat this cycle, ___branch-->code-->commit-->merge___, as many times as you want.
+
+
+
 
 
 
