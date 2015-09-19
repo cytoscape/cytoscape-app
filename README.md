@@ -116,6 +116,76 @@ Fast-forward
 
 You can repeat this cycle, ___branch-->code-->commit-->merge___, as many times as you want.
 
+#### Reflect changes to the core
+At this point, you worked only on the SBML reader repository.  Even if you create a lot of new features in apps, core does not know anything about those.  Once you are ready to publish those new features to other core developers, you need to update the pointer in the ___app___ directory to the latest commit you made for the SBML reader.  This is REALLY simple:
+
+
+```
+cd ..
+git status                                                                                                                            ✱
+On branch develop
+Your branch is up-to-date with 'origin/develop'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   sbml (new commits)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+You can see that new commits are available for the sbml reader directory.  Let's commit the change to the core:
+
+```
+~/p/c/app git:develop ❯❯❯ git add -A                                                                                                                            ✱
+~/p/c/app git:develop ❯❯❯ git status                                                                                                                            ✚
+On branch develop
+Your branch is up-to-date with 'origin/develop'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   sbml
+
+~/p/c/app git:develop ❯❯❯ git commit -m "README updated for SBML Reader App."                                                                                   ✚
+[develop a0631d5] README updated for SBML Reader App.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+~/p/c/app git:develop ❯❯❯ git push                                                                                                                              ⬆
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 2, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 273 bytes | 0 bytes/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+To git@github.com:cytoscape/cytoscape-app.git
+   731bc31..a0631d5  develop -> develop
+```
+
+That's it!
+
+## Best Practices
+
+* When you work on Core Apps, work only on the repository until you finish a task (new features or bug fixes)
+* Once you reache to a major milestone, go back to ___app___ directory and update the submodule
 
 
 
