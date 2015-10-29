@@ -36,6 +36,8 @@
 		<module>datasource-biogrid</module>
 		<module>network-analyzer</module>
 		<module>network-merge</module>
+		<module>opencl-cycl</module>
+		<module>opencl-layout</module>
 		<module>psi-mi</module>
 		<module>sbml</module>
 		<module>webservice-biomart-client</module>

@@ -31,3 +31,9 @@
 [submodule "cyREST"]
 	path = cyREST
 	url = git@github.com:cytoscape/cyREST.git
+[submodule "opencl-cycl"]
+	path = opencl-cycl
+	url = git@github.com:cytoscape/opencl-cycl.git
+[submodule "opencl-layout"]
+	path = opencl-layout
+	url = git@github.com:cytoscape/opencl-layout.git
