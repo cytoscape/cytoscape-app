@@ -185,7 +185,7 @@ That's it!
 ## Best Practices
 
 * When you work on Core Apps, work only on the repository until you finish a task (new features or bug fixes)
-* Once you reache to a major milestone, go back to ___app___ directory and update the submodule
+* Once you reach to a major milestone, go back to ___app___ directory and update the submodule
 
 
 
