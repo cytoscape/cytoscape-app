@@ -35,7 +35,6 @@ Don't be scared!  The only thing you need to understand is, ___a submodule is a 
  947e5ca1d8ff2fda6f41852687073369b52ca574 sbml (3.3.0-coreapp-init)
  78e6e424115f45ea5f6ddfe1bef2e7fc6b176ab1 webservice-biomart-client (3.3.0-coreapp-init)
  c67b8bd366b107634529585974406b5161e47c22 webservice-psicquic-client (3.3.0-coreapp-init)
- 7ed0e24c5e4d16d2442e899a25ee936733e01ca5 welcome (3.3.0-coreapp-init-2-g7ed0e24)
 ```
 
 All Core Apps in this directory are just pointers to specific commits (left).
