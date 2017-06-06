@@ -42,5 +42,6 @@
 		<module>sbml</module>
 		<module>webservice-biomart-client</module>
 		<module>webservice-psicquic-client</module>
+		<module>welcome</module>
 	</modules>
 </project>
